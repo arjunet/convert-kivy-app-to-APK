@@ -1,19 +1,19 @@
 [app]
 
 # (str) Title of your application
-title = Your App Name Here (No quotes)
+title = Calculator
 
 # (str) Package name
-package.name = Package name. (no carefull planning required)
+package.name = Calculator. 
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.(your domain)
+package.domain = com.calculator
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas,txt # Any other exts you have
+source.include_exts = py,png
 
 # (list) List of inclusions using pattern matching
 source.include_patterns = images/*.png
@@ -37,21 +37,21 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.3.0,kivymd==1.1.1,pillow==10.3.0
+requirements = python3,kivy==2.3.0,kivymd==1.1.1
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/images/presplash.png # Upload your own images, so you can customize
+presplash.filename = %(source.dir)s/images/calculatorsplash.png # Upload your own images, so you can customize
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/images/icon.png
+icon.filename = %(source.dir)s/images/calculator.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
-orientation = landscape
+orientation = portrait
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -95,7 +95,7 @@ fullscreen = 1
 
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
-android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, WAKE_LOCK
+#android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, WAKE_LOCK
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
